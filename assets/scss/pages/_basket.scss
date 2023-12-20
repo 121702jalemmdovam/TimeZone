@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    nav{
+        width: 90%;
+        margin: auto;
+        .collapseDiv{
+            width: 90%;
+         display: flex;
+         justify-content: center;
+         .navbar-nav{
+            li a{
+                color: black !important;
+                font-weight: 600;
+                font-size: 15px;
+                &:hover{
+                    color: #FE2122 !important;
+                    cursor: pointer;
+                }
+            }
+         }
+        }
+        .icon{
+            width: 30%;
+            display: flex;
+            justify-content: flex-end;
+            gap: 30px;
+            i{
+                color: black !important;
+                &:hover{
+                    color: #FE2122 !important;
+                    cursor: pointer;
+                }
+            }
+        }
+
+    }
+}
+#head{
+    position: relative;
+}
+#aboutInf{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    #products{
+        width: 100%;
+        display: flex;
+        gap: 20px;
+        .box{
+           width: 25%;
+            img{
+                width: 100%;
+            }
+            button{
+                color: #fff;
+                background-color: red;
+                transition: 1s;
+                padding: 10px;
+                border-radius: 20px;
+                border: 1px solid red;
+                display: flex;
+                gap: 10px;
+                justify-content: center;
+                align-items: center;
+                i{
+                    margin-top: 0.5rem;
+                    margin: 0 0.3rem;
+                }
+                &:hover{
+                    background-color: #fff;
+                    color: red;
+                }
+            }
+        }
+    }
+}
+#filtered{
+    margin: 25px 0;
+    .container{
+        .filter{
+            input{
+                cursor: pointer;
+            }
+        }
+    }
+}
+footer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    .container{
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        .foot{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            span{
+                font-size: 15px;
+            }
+            i{
+                color: #FE2122;
+            }
+            a{
+                color: #FE2122;
+            }
+        }
+        .footIcon{
+            padding-left: 20px;
+            width: 70%;
+            display: flex;
+           justify-content: flex-end;
+           align-items: center;
+           gap: 30px;
+        }
+    }
+}

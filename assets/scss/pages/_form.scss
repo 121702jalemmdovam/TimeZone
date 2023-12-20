@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    nav{
+        width: 90%;
+        margin: auto;
+        .collapseDiv{
+            width: 90%;
+         display: flex;
+         justify-content: center;
+         .navbar-nav{
+            li a{
+                color: black !important;
+                font-weight: 600;
+                font-size: 15px;
+                &:hover{
+                    color: #FE2122 !important;
+                    cursor: pointer;
+                }
+            }
+         }
+        }
+        .icon{
+            width: 30%;
+            display: flex;
+            justify-content: flex-end;
+            gap: 30px;
+            i{
+                color: black !important;
+                &:hover{
+                    color: #FE2122 !important;
+                    cursor: pointer;
+                }
+            }
+        }
+
+    }
+}
+#formSec {
+    .container {
+        display: flex;
+        justify-content: center;
+
+        form {
+            width: 50%;
+
+            p {
+                text-align: center;
+                font-size: 1.5rem;
+                font-weight: 600;
+                margin: 20px 0;
+            }
+        }
+    }
+}
+
+#formDisplay {
+    .container {
+        #display {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+
+            .box {
+                width: 250px;
+                padding: 25px;
+                box-shadow: 0 1px 10px rgb(0, 0, 0.2);
+
+                span {
+                    font-weight: 500;
+                    font-size: 18px;
+                }
+
+                button {
+                    color: #fff;
+                    background-color: red;
+                    transition: 1s;
+                    padding: 10px;
+                    border-radius: 20px;
+                    border: 1px solid red;
+                    display: flex;
+                    gap: 10px;
+                    justify-content: center;
+                    align-items: center;
+
+                    &:hover {
+                        background-color: #fff;
+                        color: red;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    nav{
+        width: 90%;
+        margin: auto;
+        .collapseDiv{
+            width: 90%;
+         display: flex;
+         justify-content: center;
+         .navbar-nav{
+            li a{
+                color: black !important;
+                font-weight: 600;
+                font-size: 15px;
+                &:hover{
+                    color: #FE2122 !important;
+                    cursor: pointer;
+                }
+            }
+         }
+        }
+        .icon{
+            width: 30%;
+            display: flex;
+            justify-content: flex-end;
+            gap: 30px;
+            i{
+                color: black !important;
+                &:hover{
+                    color: #FE2122 !important;
+                    cursor: pointer;
+                }
+            }
+        }
+
+    }
+}
+
+
+#Timezone{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    background-color: #F0F0F2;
+    .container{
+        width:100% ;
+        height: auto;
+        margin-top: 20px;
+        .TimezoneItem{
+            padding: 30px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            img{
+                width: 100%;
+                height: auto;
+            }
+            h1{
+                margin-top: 20px;
+                margin-bottom: 20px;
+                font-size: 60px;
+                font-weight: 700;
+
+            }
+            p{
+                margin-top: 20px;
+                margin-bottom: 20px;
+                font-size: 20px;
+
+            }
+            button{
+                margin-top: 20px;
+                margin-bottom: 20px;
+                width: 170px;
+                height: 50px;
+                border: none;
+                background-color: #4A4A4B;
+                color: white;
+                font-weight: 700;
+                transition: 1s;
+                &:hover{
+                    background-color:#FE2122 ;
+                    cursor: pointer;
+                   
+                }
+            }
+
+        }
+    }
+}
+#NewArrivals{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    .container{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        h2{
+            font-size: 40px;
+            font-weight: 600;
+        }
+        .NewArrivalsCard{
+          display: flex;  
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          img{
+            width: 100%;
+            height: auto;
+          }
+          h5{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-size: 25px;
+            font-weight: 600;
+          }
+          span{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 25px;
+            color: red;
+            font-weight: 600;
+          }
+        }
+    }
+}
+#products{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    background-color: antiquewhite;
+    .container{
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        #productList{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+          gap: 20px;
+           .boxDiv {
+            width: 20%;
+            display: flex;
+            flex-direction: column;
+            img{
+                width: 100%;
+                height: auto;
+            }
+            .title{
+                margin-top: 20px;
+                margin-bottom: 20px;
+                font-weight: 700;
+            }
+            .price{
+            color: #FE2122;
+            font-weight: 700;
+
+            }
+            button{
+                width: 100%;
+                height: 40px;
+                border: none;
+                background-color: #FE2122;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                border-radius: 10px;
+                color: white;
+                font-weight: 600;
+                transition: 1s;
+                cursor: pointer;
+                &:hover{
+                    background-color: black;
+                }
+
+            }
+
+           }
+        }
+         #pagi{
+
+          width: 150px;
+          height: 40px;
+          background-color: rgb(135, 135, 231);
+          border: none;
+          color: white;
+          font-weight: 600;
+          border-radius: 10px;
+         }
+    }
+}
+@media screen and (max-width:971px) {
+    #products{
+        width: 100%;
+        height: auto;
+        .container{
+            #productList{
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                .boxDiv {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    img{
+                        width: 100%;
+                    }
+            }
+        }   
+    }
+    
+}}
+footer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    .container{
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        .foot{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            span{
+                font-size: 15px;
+            }
+            i{
+                color: #FE2122;
+            }
+            a{
+                color: #FE2122;
+            }
+        }
+        .footIcon{
+            padding-left: 20px;
+            width: 70%;
+            display: flex;
+           justify-content: flex-end;
+           align-items: center;
+           gap: 30px;
+        }
+    }
+}
